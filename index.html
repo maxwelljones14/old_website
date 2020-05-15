@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<title>Maxwell Jones | CMU '23</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('images/profile_pic.jpg');
+  min-height: 100%;
+}
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+</style>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+      <a href="#education" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Education</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Projects</a>
+          <a href="#hobbies" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Hobbies</a>
+
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Maxwell Jones</b></h1>
+    <p>Carnegie Mellon University Class of '23</p>
+          <p>Double Major in AI and Math</p>
+    <img src="/images/profile_pic.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="/images/profile_pic.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <a target="_blank" href="Resume_doc.pdf">
+        <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+
+        <i class="fa fa-download"></i> My Resume
+    </button></a>
+  </header>
+
+        <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="education">
+
+    <h3 class="w3-padding-16">Education and Experience</h3>
+
+    <div class="w3-row w3-center w3-dark-grey w3-row-padding w3-padding-16 w3-section">
+
+        <div class="w3-third w3-section">
+                  <img src="images/TJ.jpeg" style="width:100%" height="300">
+          <span class="w3-xlarge" >Thomas Jefferson High School</span><br>
+                        <a target="_blank" href="Help.html#TJ">
+                            <button class="w3-button" type = "button" >learn more</button></a>
+      </div>
+      <div class="w3-third w3-section">
+                  <img src="images/CMU.jpg" style="width:100%" height="300">
+
+        <span class="w3-xlarge">Carnegie Mellon University</span><br>
+                                  <a target="_blank" href="Help.html#CMU" >
+                                      <button class="w3-button" type = "button" >learn more</button></a>
+      </div>
+      <div class="w3-third w3-section">
+                            <img src="images/FCA.jpg" style="width:100%" height="300">
+        <span class="w3-xlarge">Fiat Chrysler Automobiles</span><br>
+                                            <a target="_blank" href="Help.html#FCA" >
+                                                <button class="w3-button" type = "button" >learn more</button></a>
+      </div>
+    </div>
+
+    <!-- Testimonials --
+
+     Grid for pricing tables -->
+
+    <!-- End Grid/Pricing tables -->
+    </div>
+
+  <!-- End About Section -->
+  <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-content" id="portfolio" align="center">
+    <h2 class="w3-text-grey">My Projects</h2>
+    <hr class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+                    <a  target="_blank"  href="Help.html#Origami">
+                    <div class="w3-button button2">
+                        <img src="images/Origami.png" style="width:100%"></div></a>
+                              <a  target="_blank"  href="Help.html#linear">
+                              <div class="w3-button button2">
+                                  <img src="images/Housing.jpg" style="width:100%"></div></a>
+      </div>
+
+      <div class="w3-half">
+          <a  target="_blank" href="Help.html#WS">
+          <div class="w3-button button2">
+        <img src="images/WalkSafe.jpg" style="width:100%"></div></a>
+                                        <a  target="_blank" href="Help.html#Rail">
+<div class="w3-button button2">
+        <img src="images/Railroads.jpg" style="width:100%"></div>
+                                        </a></div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <div class="w3-padding-32 w3-content" id="hobbies" align="center">
+    <h2 class="w3-text-grey">Some of my hobbies</h2>
+    <div class="w3-row w3-center w3-dark-grey w3-row-padding w3-padding-16 w3-section">
+      <div class="w3-third w3-section">
+                        <span class="w3-xlarge">Teaching</span><br>                    <a  target="_blank" href="Help.html#Teach">
+          <button class="w3-button" type = "button" >learn more</button></a>
+      </div>
+
+      <div class="w3-third w3-section">
+
+        <span class="w3-xlarge">Origami</span><br>
+              <a  target="_blank" href="Help.html#Origamii">
+                  <button class="w3-button" type = "button" >learn more</button></a>
+      </div>
+ <div class="w3-third w3-section">
+          <span class="w3-xlarge" >Basketball</span><br>
+                   <a  target="_blank" href="Help.html#Basket">
+                       <button class="w3-button" type = "button" >learn more</button></a>
+      </div>
+  </div>
+  <!-- About Section -->
+
+  <!-- Contact Section -->
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <div id="line1">Ways to contact me</div>
+      <div id="line2" ><i style="font-size:12">maxwelljonesnova@gmail.com</i></div>
+          <div id="line3" >
+              <a target="_blank" href="https://github.com/maxwelljones14">
+      <i class="fa fa-github w3-hover-opacity" style="font-size:45px"></i>     </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/maxwell-jones-636393190/">
+              <i class="fa fa-linkedin w3-hover-opacity" style="font-size:45px">     </i></a>
+                                      <a target="_blank" href="https://www.instagram.com/maxwelljones14/">
+                                          <i class="fa fa-instagram w3-hover-opacity" style="font-size:45px">     </i></a>
+  <!-- End footer --></div>
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
