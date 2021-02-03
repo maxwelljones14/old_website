@@ -87,6 +87,33 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
  <h3 style="font-size:15px;">Summer 2021</h3>
         <h3 style="font-size:20px;">Right now I am planning on interning at Facebook in Summer of 2021. I will update this section after the internship is complete</h3>
     <br>
+    <h3 id = "Battlecode" style="font-size:30px;">BattleCode (<a  href="https://github.com/BSreenivas0713/Battlecode2021" >Full Code</a> | Full Post Mortem)</h3>
+    <h3 style="font-size:20px;"><b>Partners</b>: <a  href="https://www.linkedin.com/in/winston-cheung/">Winston Cheung</a>, <a  href="https://www.linkedin.com/in/david-lyons-cmu/">David Lyons</a>, <a  href="https://www.linkedin.com/in/bsreenivas/">Bharath Sreenivas</a></h3>
+    <h3 style="font-size:20px;"><b>General Overview</b>: Battlecode is an MIT AI competition run every year throughout the month of January. At the beginning of the month, they release a new 2 player game in java, at which point teams have to code up a bot that plays said game. There are multiple Tournaments throughout the month, ending in a tournament for the top 16 teams out of the hundreds that submit code for cash prizes</h3>
+    <h3>Overview of 2020 Battlecode Implementation(3 Musketeers)</h3>
+    <ul style="font-size:20px;">
+        <li>We used a superclass called robot that had method that all different robot types needed, and extended this class for each specific robot type that we needed to make</li>
+        <li>Our Enlightenment Centers, or towers that were stationary but actively could make other towers, used a Stack to store different States. With this in place, we could switch from a state like
+        Default to defending, while pushing Default to the stack. Once we were done defending, we could pop the State Stack and go back to Default mode. This allowed us to do a lot of tasks as intermediates while still haveing main tasks</li>
+        <li>We used priority queues that stored locations of enemy bases, giving priority to those that had the least amount of money, to effectively take over enemy bases when possible</li>
+        <li>We used bit manipulation to communicate between towers, which all had 24 bit flags that robots in sensor radius could see</li>
+    </ul>
+    <h3>Conclusion/Lessons Learned:</h3>
+    <ul style="font-size:20px;">
+        <li>In the end, our team placed 9th out of over 200 teams that submitted code</li>
+        <li>Some important lessons learned include:</li>
+        <ul style="font-size:20px;">
+            <li>Sometimes complex isn't always better. Some of our simplest and most easily changeable code worked best for us</li>
+            <li>Careful and precise troublshooting is super important. Sometimes we had bugs that made our code severely worse that could only be found with frame by frame inspection of games</li>
+            <li>Don't be afraid to gain insight from others/restart large parts of the code. Sometimes our strategy just wasn't great, and restarting with new knoledge lead to huge improvements fairly quickly</li>
+            <li>find the real problem. A lot of times we tweaked parts of our code in hopes to fix a problem that was in a completely different section. It's important to ask yourself what's wrong before trying to find optimizations to fix it.</li>
+        </ul>
+    </ul>
+        <h3>Example Game:</h3>
+    <p>This is a game played against Monky that we won. Monky ended up finishing 5th out of all competitors For a better idea of what's going on here, read the full post mortem linked above</p>
+
+    <iframe width="560" height="315" src="https://youtube.com/embed/WZrlJAE3LKw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
     <h3 style="font-size:30px;">Origami Social Networking</h3>
         <h3 style="font-size:20px;"><b>Problem</b>: There is no platform for small origamists to meet and share origami models</h3>
     <h3 style="font-size:20px;"><b>Goal</b>: Create a website where origamists can share their work with each other</h3>
@@ -150,6 +177,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
                                        <img src="images/Origami1.jpg" width="300" height="300"><br><p >Me in 10th grade teaching origami to kids in Myanmar</p></div>
     <br>
 
+
     <h3 style="font-size:30px;">Teaching Math and Science to younger students:</h3>
             <p style="font-size:20px;" class="tab" id="Tpart2">I wanted to take my newfound interest in teaching further, so in high school I joined a program where
             students would go to local elementary/middle schools every week, and gave students extra help in math or science. I really enjoyed it, so I participated
@@ -169,7 +197,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p style="font-size:20px;" class="tab">After my freshman year at Carnegie Mellon, I knew that I wanted to go into teaching at a Collegiate level. While this was informal in my first year, through simply helping out my peers with coursework that
     we were both taking at the same time, my Sophmore year I decided to become a TA in 15-151, Carnegie Mellon's introductory discrete math course, and a tutor for 15-251, Carnegie Mellon's discrete math/proof course for computer
     scientists. I chose 15-151 specifically since it is a course taught to school of computer science freshman, in molds how the view problems and problem solving, and how to handle college classes in general.</p>
-            <h3 style="font-size:35px;" id = "Origamii">Origami</h3>
+            <h3 style="font-size:35px;" id = "Origami">Origami</h3>
         <h3 style="font-size:30px;">Models</h3>
     <p style="font-size:20px;" class="tab" >I've been folding origami for over a decade now, and over time I've been able to become skilled enough to fold some great models. Nowadays I do most of my folding at CMU's origami club.
         Here are some of my favorites from my <a  href="https://www.instagram.com/origami__wonders/">Origami Instagram Page</a>: </p>
