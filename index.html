@@ -1,193 +1,426 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<title>Maxwell Jones | CMU '23</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="shortcut icon" href="images/integral.jpg" type="image/jpg">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-.bgimg {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('images/profile_pic.jpg');
-  min-height: 100%;
-}
-.button2:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-</style>
-<body>
+	<head>
+		<title>Astral by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-<!-- Sidebar with image -->
-<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
-  <div class="bgimg"></div>
-</nav>
+		<!-- Wrapper-->
+			<div id="wrapper">
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
+						<a href="#projects" class="icon solid fa-lightbulb-o"><span>Projects</span></a>
+						<a href="#hobbies" class="icon solid fa-puzzle-piece"><span>Hobbies</span></a>
+						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+					</nav>
 
-<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
-    <i class="fa fa-remove"></i>
-  </a>
-  <div class="w3-bar-block w3-center">
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-      <a href="#education" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Education/Experience</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Projects</a>
-          <a href="#hobbies" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Hobbies</a>
+				<!-- Main -->
+					<div id="main">
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>Hi! I'm Maxwell :)</h1>
+									<p>AI & Math Double Major @ <a class="text" href="https://www.cs.cmu.edu/">CMU</a></p>
+									<br><p style="font-size:20px ;"><strong>I'm currently a senior researching under <a class="text" href="https://www.cs.cmu.edu/~junyanz/">Jun-Yan Zhu</a> in the Generative Intelligence Lab
+                                        as well as <a class="text" href="http://www.cs.cmu.edu/~ninamf/">Nina Balcan</a> on Theoretical Semi-Supervised Learning. I'm also a head TA for <a class="text" href="https://www.math.cmu.edu/~jmackey/151_128/welcome.html">15-151</a>  Concepts of Mathematics.</strong>
+                                    <p><br>
+                                        <a href="Maxwell_Jones_Resume.pdf"><button>My Resume</button></a>
+                                    </p>
+                                    
+								</header>
+								<a href="#work" class="jumplink pic">
+									<img src="images/me.jpg" alt="" />
+									<span class="arrow icon solid fa-chevron-right"><span>
+								</a>
+							</article>
 
-  </div>
-</nav>
+						<!-- Work -->
+                            <article id="work" class="panel">
+                                Here's a brief overview of my work. My <a href="Maxwell_Jones_Resume.pdf" class="text">Resume</a> again, for reference. <br>
+                                <table class="table table-hover" style="color: #000000;font-size: 15pt;margin-top:0;">
+									<tbody>
+                                        <td><strong style="font-size:40pt;">Education</strong></td>
+										<tr>
+											<td class="col-md-3">Sept 2019 - June 2023</td>
+											<td>
+												<strong>Bachelors in Artificial Intelligence and Math</strong>
+												<br> Carnegie Mellon University
+											</td>
+											<td class="col-md-3">GPA: 4.0/4.0</td>
+										</tr>
+										<tr>
+											<td class="col-md-3">Sept 2015 - June 2019</td>
+											<td>
+												<strong>High School Diploma</strong>
+												<br> Thomas Jefferson High School for Science and Technology
+											</td>
+											<td class="col-md-3">GPA: 4.1/5.0</td>
+										</tr>									
+                                        <tr>
+                                            <td><strong style="font-size:40pt;">Publications</strong></td>
+                                        </tr>
+                                            <tr>
+                                                <td class="col-md-3"><img class = "img-fluid" alt="laptop" src="images/bias_amplification_curve.png" style="width:250px;vertical-align:top;"></td>
 
-<!-- Page Content -->
-<div class="w3-main w3-padding-large" style="margin-left:40%">
+                                                <td class="col-md-3"><strong>A Systemic Study of Bias Amplification</strong><br> 
+                                                    <a class="text" href="https://scholar.google.com/citations?hl=en&user=DcfHZoUAAAAJ" style="font-size: 15px;">Melissa Hall</a>, <a class="text" style="font-size: 15px;" href="https://lvdmaaten.github.io/">Laurens Van der Maaten</a>, <a class="text" style="font-size: 15px;"href="https://scholar.google.com/citations?user=c8IpF9gAAAAJ&hl=en">Laura Gustafson</a>, 
+                                                    <strong style="font-size: 15px;"><br>Maxwell Jones</strong>, <a class="text" href="https://scholar.google.com/citations?user=oa78zHUAAAAJ&hl=en"style="font-size: 15px;"> Aaron Adcock</a> 
+                                                        <br > <strong><a  class="text" href="https://arxiv.org/abs/2201.11706" style="font-size: 15px;">[paper]</a> <a class="text" style="font-size: 15px;" href="https://github.com/facebookresearch/cv_bias_amplification">[code]</a></strong></td>
+                                                         <td class="col-md-3"> NeurIPS 2022</td>
+                                                    
+                                            </tr>	
 
-  <!-- Menu icon to open sidebar -->
-  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+                                        <td><strong style="font-size:40pt;">Experience</strong></td>
+								    </tr>
+										<tr>
+											<td class="col-md-3">Summer 2022</td>
+											<td>
+												<strong>Software Engineer Intern</strong> <td class="col-md-3"> FAIR Labs - Meta</td>
+												<br> 
+											</td>
+										</tr>
+										<tr>
+											<td class="col-md-3">Summer 2021</td>
+											<td>
+												<strong>Software Engineer Intern</strong><td class="col-md-3"> Probabilistic Machine Learning - Meta</td>
+											</td>
+										</tr>
+										<tr>
+											<td class="col-md-3">Summer 2020</td>
+											<td>
+												<strong>Data Science Intern</strong> <td class="col-md-3"> Fiat Chrysler Automobiles</td>
+											</td>
+										</tr>									
+                                        <td style="font-size:15pt;"><strong style="font-size:40pt;">Teaching</strong> <br><strong>Carnegie Mellon University</strong> </td>
 
-  <!-- Header -->
-  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-    <h1 class="w3-jumbo"><b>Maxwell Jones</b></h1>
-    <p>Carnegie Mellon University Class of '23</p>
-          <p>Double Major in AI and Math</p>
-    <img src="/images/profile_pic.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
-    <img src="/images/profile_pic.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
-    <a href="Maxwell_Jones_Resume.pdf">
-        <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+                                        <tr>
+                                            <td class="col-md-3">Fall 2022</td>
+                                            <td>
+                                                <strong>Head Teaching Assistant, Concepts of Mathematics </strong> <td class="col-md-3"> <a class="text" href="https://www.math.cmu.edu/~jmackey/151_128/welcome.html">(15-151/21-128)</a> </td> 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-3">Spring 2021</td>
+                                            <td>
+                                                <strong>Teaching Assistant, Theoretical Computer Science </strong> <td class="col-md-3"><a class="text"  href="http://www.cs.cmu.edu/~15251/">(15-251)</a>  </td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-3">Fall 2021</td>
+                                            <td>
+                                                <strong>Head Teaching Assistant, Concepts of Mathematics </strong> <td class="col-md-3"> <a class="text"  href="https://www.math.cmu.edu/~jmackey/151_128/welcome.html">(15-151/21-128)</a> </td> 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-3">Spring 2020</td>
+                                            <td>
+                                                <strong>Teaching Assistant, Theoretical Computer Science </strong> <td class="col-md-3"><a class="text"  href="http://www.cs.cmu.edu/~15251/">(15-251)</a>  </td>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-3">Fall 2020</td>
+                                            <td>
+                                                <strong>Teaching Assistant, Concepts of Mathematics </strong> <td class="col-md-3"> <a class="text" href="https://www.math.cmu.edu/~jmackey/151_128/welcome.html">(15-151/21-128)</a> </td> 
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <a href="#projects" class="jumplink pic" style="margin-bottom: 0px;margin-right: 0px;position:absolute;bottom:0;right:0;border-bottom:none;font-size:75px;">
+                                    <span class="arrow icon solid fa-chevron-right" style="						
+                                    display: block;
+                                    right: 0;
+                                    top: 50%;
+                                    background: #000;
+                                    background: rgba(0, 0, 0, 0.75);
+                                    color: #ffffff;
+                                    text-align: center;
+                                    line-height: 1em;
+                                    z-index: 1;
+                                    -moz-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+                                    -webkit-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+                                    -ms-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+                                    transition: width .15s ease-in-out, padding-right .15s ease-in-out;"><span> 
 
-        <i class="fa fa-download"></i> My Resume
-    </button></a>
-  </header>
+                                    </a>
+                                
+                            </article>
 
-        <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="education">
+                        
+							<article id="projects" class="panel"> 
+								<p>
+									I've had the privilege of working on a lot of super cool projects with awesome people over the years. Here are some of my favorite projects!
+								</p>
+								<section>
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#battlecode" class="image fit"><img src="images/BattleCode.png" alt="">
+                                            </a>
+                                            <p style="text-align:center"><b>BattleCode!</b><br>Annual strategy-based coding competition run by MIT</p>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#spotify" class="image fit"><img src="images/spotify.jpg" alt=""></a>
+                                            <p style="text-align:center"><b>Spot your mood!</b><br>Hackathon project for spotify song recomendations</p>
+										</div>
+                                        <div class="col-4 col-6-medium col-12-small">
+											<a href="#football" class="image fit"><img src="images/Football.jpg" alt=""></a>
+                                            <p style="text-align:center"><b>Football with linear algebra!</b><br>Term project for predicting NFL playoffs using linear algebra</p>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#walksafe" class="image fit"><img src="images/WalkSafe.jpg" alt=""></a>
+                                            <p style="text-align:center"><b>WalkSafe!</b><br>App for finding safe walking paths at night</p>
+										</div>
+                                        <div class="col-4 col-6-medium col-12-small">
+											<a href="#origami_social_networking" class="image fit"><img src="images/Origami.png" alt=""></a>
+                                            <p style="text-align:center"><b>Origami Social Networking!</b><br>Fullstack project to create origami social networking platform</p>
+										</div>
+									</div>
+								</section>
+                                <a href="#hobbies" class="jumplink pic" style="margin-bottom: 0px;margin-right: 0px;position:absolute;bottom:0;right:0;border-bottom:none;font-size:75px;">
+                                    <span class="arrow icon solid fa-chevron-right" style="						
+                                    display: block;
+                                    right: 0;
+                                    top: 50%;
+                                    background: #000;
+                                    background: rgba(0, 0, 0, 0.75);
+                                    color: #ffffff;
+                                    text-align: center;
+                                    line-height: 1em;
+                                    z-index: 1;
+                                    -moz-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+                                    -webkit-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+                                    -ms-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+                                    transition: width .15s ease-in-out, padding-right .15s ease-in-out;"><span> 
 
-    <h3 class="w3-padding-16">Education and Experience</h3>
+                                    </a>
+                            </article>
+                        
+                            <article id="battlecode" class="panel">
+								<header>
+									<h1>BattleCode! (<a href="https://battlecode.org/" class="text">homepage</a>)</h1>
+								</header>
+                                <img src="images/battleCodeMIT.jpg" alt="" 
+                                style="height:400px;width:auto;display:block;margin-left:auto;margin-right:auto;" 
+                                class="center">
+                                <a href="#projects" style="margin-top: 1px;margin-right: 10px;position:absolute;top:5px;left:15px;border-bottom:none;font-size:75px;">&laquo;</a>
+                                <h3 style="font-size:20px;"><b>Partners</b>: <a class="text" href="https://www.linkedin.com/in/winston-cheung/">Winston Cheung (left)</a>, 
+                                    <a class="text" href="https://www.linkedin.com/in/david-lyons-cmu/">David Lyons (not shown)</a>, 
+                                    <a class="text" href="https://www.bharathsreenivas.net/">Bharath Sreenivas (middle)</a></h3>
 
-    <div class="w3-row w3-center w3-dark-grey w3-row-padding w3-padding-16 w3-section">
+                                    <p><br><strong>Battlecode is an MIT AI competition run every year throughout the month of January with 100s of teams and thousands of participants entering code. As a general overview, games consist of two teams, each with control of some number of robots. These robots have different abilities(making money, attacking, creating more robotos, etc), 
+                                        and can only communicate through bitFlags whose messages must be coded up in some finite range. <br><br>
+                                        There are multiple tournaments throughout the month, ending in a tournament for the top 16 teams getting flown out to MIT  for cash prizes. We were lucky enough to be
+                                        in the top 16 for the past two years. Last year we went to MIT to watch the final competition.</p></strong>
 
-        <div class="w3-third w3-section">
-                  <img src="images/TJ.jpeg" style="width:100%" height="300">
-          <span class="w3-xlarge" >Thomas Jefferson High School</span><br>
-                        <a href="Help.html#TJ">
-                            <button class="w3-button" type = "button" >learn more</button></a>
-      </div>
-      <div class="w3-third w3-section">
-                  <img src="images/CMU.jpg" style="width:100%" height="300">
+                                <h2>2022 Overview </h2>
+                                <p><strong>[<a class="text" href="https://github.com/BSreenivas0713/Battlecode2022">Full Code</a>] |    [<a class="text"href="BattleCode2022.pdf">Full Post Mortem</a>]</strong></p>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/X5d00wtBX3k?start=5832&end=6027" title="Battlecode 2022 Final Tournament" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p><strong>Here are some of the cooler features from this year: 
+                                    <ul style="tab-size:50px;">
+                                        <li>
+                                            Like in 2021, we used a stack to store states (look at the first bullet 2021 for more info)
+                                        </li>
+                                        <li>
+                                            We used a distributed k clustering algorithm for troop movements. All troops reported enemy troops in their range to the main tower, which then found at most 3 main enemy clusters. From here our troops went towards their closest cluster
+                                        </li>
+                                        <li>
+                                           We spent a lot of time on troop to troop micro-interactions. for deciding whether to attack at a micro level, we considered how many troops we had vs how many troops the enemy had as well as health, cooldown, and land passability
+                                        </li>
+                                    </ul>
+                                    <br>
+                                </strong></p>                                
+                                <h2>2021 Overview</h2>
+                                <p><strong>[<a class="text" href="https://github.com/BSreenivas0713/Battlecode2021">Full Code</a>] |    [<a class="text"href="BattleCode2021.pdf">Full Post Mortem</a>]</strong></p>
+                                <iframe width="560" height="315" src="https://youtube.com/embed/WZrlJAE3LKw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                                <p><strong>Here are some of the cooler features from this year: 
+                                    <ul style="tab-size:50px;">
+                                        <li>
+                                            Our home base towers used a stack to store different States. With this in place, we could switch from a state like Default to defending, while pushing Default to the stack. Once we were done defending, we could pop the State Stack and go back to Default mode. 
+                                            This allowed us to do a lot of tasks as intermediates while still having main tasks
+                                        </li>
+                                        <li>
+                                            We used priority queues that stored locations of enemy bases, giving priority to those that had the least amount of money, to effectively take over enemy bases when possible
+                                        </li>
+                                        <li>
+                                            We used bit manipulation to communicate between towers, which all had 24 bit flags that robots in sensor radius could see
+                                        </li>
+                                    </ul>
+                                </strong></p>
 
-        <span class="w3-xlarge">Carnegie Mellon University</span><br>
-                                  <a href="Help.html#CMU" >
-                                      <button class="w3-button" type = "button" >learn more</button></a>
-      </div>
-      <div class="w3-third w3-section">
-                            <img src="images/FCA.jpg" style="width:100%" height="300">
-        <span class="w3-xlarge">Fiat Chrysler Automobiles</span><br>
-                                            <a href="Help.html#FCA" >
-                                                <button class="w3-button" type = "button" >learn more</button></a>
-      </div>
-        <div class="w3-third w3-section">
-                            <img src="images/Facebook.png" style="width:100%" height="300">
-        <span class="w3-xlarge">Facebook</span><br>
-                                            <a href="Help.html#Facebook" >
-                                                <button class="w3-button" type = "button" >learn more</button></a>
-      </div>
-    </div>
+                            </article>
+                            <article id="spotify" class="panel">
+                                <a href="#projects" style="margin-top: 1px;margin-right: 10px;position:absolute;top:5px;left:15px;border-bottom:none;font-size:75px;">&laquo;</a>
+                                <h1>Spot your Mood! [<a class="text" href="https://github.com/itswin/tartanhacks21">Full Code</a>]</h1>
+                                <br>
+                                <iframe width="75%" height="400" style="margin-left:auto;margin-right:auto;display:block;" 
+                                src="https://youtube.com/embed/UaUhAYyHwYQ" frameborder="0" 
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                                <h2><br> Overview </h2>
+                                <br>
+                                <p>
+                                    <strong>We used the Spotify API in conjuction with Google's NLP API to create an app that 
+                                        classified the mood of your songs. In addition to classification, we were able to query certain moods from 
+                                        a user and output songs that had the most correlation to the mood that the user wanted.</strong></p>
+                                        <h2> Implementation </h2><br>
+                                        <p><strong>
+                                        Given a user mood, we first transformed it into a mood vector. 
+                                        From there, we used Spotify's API to find a subset of songs with similar mood vectors. From here, we created a further embedding that used both spotify's 
+                                        mood vector and our sentiment analysis result and found the song with the highest dot product with the original user mood vector <br><br>
+                                        We also used a similar process to generate a curated playlist given a specific mood, as well as added ability to log in to your current spotify account and save said playlilst. 
+                                        Finally, we created a function to plot mood over time, so the user could see how the mood of their music changed over some time period.</strong>
+                                </p>
+                            </article>
+                            <article id="football" class="panel">
+                                <a href="#projects" style="margin-top: 1px;margin-right: 10px;position:absolute;top:5px;left:15px;border-bottom:none;font-size:75px;">&laquo;</a>
+                                <h1>Football with Linear Algebra! </h1><br><h2>[<a class="text" href="Linear.pdf">Full Writeup</a>]</h2>
+                               <h3 style="font-size:20px;"><b>Partner</b>: <a class="text" href="https://www.linkedin.com/in/eric-gan-cmu/">Eric Gan</a></h3>
+                                <br>
+                                <img style="width: 50%;   display: block;margin-left: auto; margin-right: auto;" src="images/football_pic.jpg"></img>
+                                <h2><br> Overview </h2>
+                                <br>
+                                <p>
+                                    <strong>The main goal of this project was to take data from the regular season of the NFL and predict the playoffs be computing rankings for each team.</strong></p>
+                                        <h2> Implementation </h2><br>
+                                        <p><strong>
+                                        We employed two main strategies:<br><br> In the first, we try to find rankings of teams, such that for every game between teams i and j, the difference between team 
+                                        i's score and team j's score is equal to their difference in ranking. This method didn't work well at first, but after taking all nonzero terms in our matrix and making them small values
+                                         1^(-15) it was very efficient. We surmise that this is because we were able to increase the stability of the matrix through perturbation<br><br>
 
-    <!-- Testimonials --
+                                        In the next method, we created a matrix that is 32 by 32, such that every entry Aij is equal to the total number of points scored by team i against team j, 
+                                        with some normalization. Next, we tried to find some strength vector S such that,
+                                         when multiplying A by S, we get a vector proportional to S. This becomes an equation where we can use eigenvalues and eigenvectors to find a solution. It 
+                                         worked better than a naive version of strategy 1, but worse than the perturbed values. 
+                                        </strong>
+                                </p>
+                            </article>
+                            <article id="walksafe" class="panel">
+                                <a href="#projects" style="margin-top: 1px;margin-right: 10px;position:absolute;top:5px;left:15px;border-bottom:none;font-size:75px;">&laquo;</a>
+                                <h1>WalkSafe! [<a class="text" href="https://github.com/jasonchadwick/WalkSafe">Full Code</a>]</h1>
+                                <br>
+                                <h3 style="font-size:20px;"><b>Partners</b>: <a class = "text" href="https://www.linkedin.com/in/tanvi-bhargava-2b23060/">Tanvi  Bhargava</a>, <a class = "text" href="https://www.linkedin.com/in/jasonchadwick/">Jason Chadwick</a>, <a class = "text" href="https://www.linkedin.com/in/adriankager/">Adrian Kager</a></h3>                                <br>
+                                <img style="width: 100%;   display: block;margin-left: auto; margin-right: auto;" src="images/path.jpg"></img>
+                                <h2><br> Overview </h2>
+                                <br>
+                                <p>
+                                    <strong>Our goal was to create a program that, given a start and end location, gives a user the safest timely walking path to their destination. We used Manhatten as a test area since they had a lot of crime data for us to use.</strong></p>
+                                        <h2> Implementation </h2><br>
+                                        <p><strong>
+                                            First, we downloaded all street nodes from OSM, a mapping API. Next, we assigned each node a value based on the amount of crime in the area, specifically weighting crime intensity via
+                                            a function that took in severity of a crime as well as decayed in value deending on distance from a node. We also only considered crimes within a certain latitude longitude value of a given node.
+                                            From here,  given a path, we would then run an A* search on the start and ending nodes, with the weight of each node being the crime rating we had assigned.<br><br>
+                                        </strong>
+                                </p>
+                                <div class="row">
+                                    <div style="width:50% ;">
+                                        <img src="images/Nodes.png" style="width:100% ;">
+                                        <p style="text-align:center">All nodes used for our A* Search</p>
+                                    </div>
+                                    <div style="width:50% ; ;">
+                                        <img src="images/Manhatten.jpg" style="width:100% ;">
+                                        <p style="text-align:center">Heatmap of Manhatten, with red/brighter areas representing more crime</p>
+                                        
+                                    </div>
+                                </div>
+                            </article>
+                            <article id="origami_social_networking" class="panel">
+                                <a href="#projects" style="margin-top: 1px;margin-right: 10px;position:absolute;top:5px;left:15px;border-bottom:none;font-size:75px;">&laquo;</a>
+                                <h1>Origami Social Networking! </h1><br><h2>[<a class="text" href="https://github.com/maxwelljones14/Origami_Social_Networking">Full Code</a>]</h2>
+                                <br>
+                                <img style="width: 50%;   display: block;margin-left: auto; margin-right: auto;" src="images/Origami.png"></img>
+                                <h2><br> Overview </h2>
+                                <br>
+                                <p>
+                                    <strong>The idea of this project was to create a platform that origamists could share their work with each other and also share models that they made with each other along with instructions</strong></p>
+                                        <h2> Implementation </h2><br>
+                                        <p><strong>
+                                        I first added a login feature with hashing passwords using MD5 so users can be authenticated in a secure manner in the backend. From here, users can look at the designs of their freinds, 
+                                        add their own designs, and create new designs via a python program embedded into the webpage. 
+                                        </strong>
+                                </p>
+                            </article>
+                        <article id="hobbies" class="panel" >
+                            <h1>Origami</h1>
+                           
+                            <h2> <br>Models</h2>
+                            <p><br><strong>I've been folding origami for over a decade now, and over time
+                                 I've been able to become skilled enough to fold some great models. 
+                                 Nowadays I do most of my folding at CMU's origami club. Here are some of my favorites from my 
+                                 <a href="https://www.instagram.com/maxwelljonesorigami/" class="text">origami instagram page</a></strong></p>
+                                 <div class="row">
+                                    <div style="width:50% ;">
+                                        <img src="images/Fluffy.jpg" style="width:100% ;">
+                                    </div>
+                                    <div style="width:50% ;">
+                                        <img src="images/Buddha.png" style="width:100% ;">
+                                    </div>
+                                    <div style="width:100% ;">
+                                        <img src="images/Owl.png" style="width:100% ;">
+                                    </div>
+                                 </div>
+                                <br>
+                                <h2> Teaching</h2>
+                                <br>
+                                <p><strong>I've been teaching origami since I was in middle school. Here are some pics of me teaching from when I was younger:</strong><br></p> 
+                                <div class="row">
+                                    <div class="col-4 col-6-medium col-12-small">
+                                        <img src="images/Origami3.jpg" style="width:100%; height:100%px ;">
+                                        <p style="text-align:center">Me in 8th grade teaching origami to kids in South Carolina                                        </p>
+                                    </div>
+                                    <div class="col-4 col-6-medium col-12-small">
+                                       <img src="images/Origami2.jpg" style="width:100%;">
+                                        <p style="text-align:center">Me in 9th grade teaching origami to kids in Kenya</p>
 
-     Grid for pricing tables -->
+                                    </div>
+                                    <div class="col-4 col-6-medium col-12-small">
+                                        <a href="#" class="image fit"><img src="images/Origami1.jpg"  style="width:100%;" ></a>
+                                        <p style="text-align:center">Me in 10th grade teaching origami to kids in Myanmar</p>
 
-    <!-- End Grid/Pricing tables -->
-    </div>
+                                    </div>
+                                </div>
+                            <h1>Basketball</h1>
+                            <p><strong><br></b>I've been playing basketball since around second grade, and I currently play club basketball at CMU. One of my big goals for basketball was being able to dunk. Here's a video of me dunking :)</strong></p>
+                            <video controls loop style="width:50% ;">
+                                <source src="images/dunk.MOV">
+                                Your browser does not support the video tag.
+                              </video>
+                        </article>
+    
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Email: </h2>
+                                    <p>mjones2@andrew.cmu.edu</p>
+								</header>
+							</article>
 
-  <!-- End About Section -->
-  <!-- Portfolio Section -->
-  <div class="w3-padding-32 w3-content" id="portfolio" align="center">
-    <h2 class="w3-text-grey">My Projects</h2>
-    <hr class="w3-opacity">
+					</div>
 
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-                <a  href="Help.html#Battlecode">
-        <div class="w3-button button2">
-        <img src="images/BattleCode.png" style="width:100%"></div>
-                                        </a>
-      <div class="w3-half">
-                    <a   href="Help.html#SocialNetworking">
-                    <div class="w3-button button2">
-                        <img src="images/Origami.png" style="width:100%"></div></a>
-                              <a   href="Help.html#linear">
-                              <div class="w3-button button2">
-                                  <img src="images/Housing.jpg" style="width:100%"></div></a>
-      </div>
+				<!-- Footer -->
+					<div id="footer">
+                        <ul class="icons">
+                            <li><a href="https://linkedin.com/in/maxwelljones14" class="iconspecial fa-linkedin"><span class="label">Linkedin</span></a></li>
+                            <li><a href="https://www.github.com/maxwelljones14" class="iconspecial fa-github"><span class="label">Github</span></a></li>
+                        </ul>
+				</div>
 
-      <div class="w3-half">
-          <a  href="Help.html#WS">
-          <div class="w3-button button2">
-        <img src="images/WalkSafe.jpg" style="width:100%"></div></a>
-                                        <a  href="Help.html#Rail">
-<div class="w3-button button2">
-        <img src="images/Railroads.jpg" style="width:100%"></div>
-                                        </a></div>
-    <!-- End photo grid -->
-    </div>
-  <!-- End Portfolio Section -->
-  </div>
+			</div>
 
-  <div class="w3-padding-32 w3-content" id="hobbies" align="center">
-    <h2 class="w3-text-grey">Some of my hobbies</h2>
-    <div class="w3-row w3-center w3-dark-grey w3-row-padding w3-padding-16 w3-section">
-      <div class="w3-third w3-section">
-                        <span class="w3-xlarge">Teaching</span><br>                    <a  href="Help.html#Teach">
-          <button class="w3-button" type = "button" >learn more</button></a>
-      </div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-      <div class="w3-third w3-section">
-
-        <span class="w3-xlarge">Origami</span><br>
-              <a  href="Help.html#Origamii">
-                  <button class="w3-button" type = "button" >learn more</button></a>
-      </div>
- <div class="w3-third w3-section">
-          <span class="w3-xlarge" >Basketball</span><br>
-                   <a  href="Help.html#Basket">
-                       <button class="w3-button" type = "button" >learn more</button></a>
-      </div>
-  </div>
-  <!-- About Section -->
-
-  <!-- Contact Section -->
-
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
-    <div id="line1">Ways to contact me</div>
-      <div id="line2" ><i style="font-size:12">maxwelljonesnova@gmail.com</i></div>
-          <div id="line3" >
-              <a href="https://github.com/maxwelljones14">
-      <i class="fa fa-github w3-hover-opacity" style="font-size:45px"></i>     </a>
-                    <a href="https://www.linkedin.com/in/maxwell-jones-636393190/">
-              <i class="fa fa-linkedin w3-hover-opacity" style="font-size:45px">     </i></a>
-                                      <a href="https://www.instagram.com/maxwelljones14/">
-                                          <i class="fa fa-instagram w3-hover-opacity" style="font-size:45px">     </i></a>
-  <!-- End footer --></div>
-  </footer>
-
-<!-- END PAGE CONTENT -->
-</div>
-
-<script>
-// Open and close sidebar
-function openNav() {
-  document.getElementById("mySidebar").style.width = "60%";
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
-
-</body>
+	</body>
 </html>
