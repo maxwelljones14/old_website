@@ -1,0 +1,120 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>PairCustomization</title>
+<link href="./style.css" rel="stylesheet">
+<!-- <script type="text/javascript" src="./DreamBooth_files/jquery.js"></script> -->
+</head>
+
+<body>
+<div class="content">
+  <h1><strong>Customizing Text-to-Image Models with a Single Image Pair</strong></h1>
+  <!-- <h2 style="text-align:center;">ECCV 2024???</h2> -->
+  <p id="authors"><a href="https://maxwelljon.es/">Maxwell Jones<sup>1</sup></a> <a href="https://peterwang512.github.io/">Sheng-Yu Wang<sup>1</sup></a> <a href="https://nupurkmr9.github.io/">Nupur Kumari<sup>1</sup></a> <a href="https://baulab.info/">David Bau<sup>2</sup></a><a href="https://www.cs.cmu.edu/~junyanz/">Jun-Yan Zhu<sup>1</sup></a><br>
+
+    <span style="font-size: 16px"><br>
+        <sup>1</sup> Carnegie Mellon University <sup>2</sup> Northeastern University <br>
+     <!-- <sup>*</sup>Indicates Equal Contribution <sup>†</sup>Indicates Equal Advising</span> -->
+        </p>
+
+  <img src="./images/teaser.png" class="teaser-gif" style="width:100%;">
+    <font size="+2">
+          <p style="text-align: center;">
+            <a href="" target="_blank">[Paper]</a> &nbsp;&nbsp;&nbsp;&nbsp;
+	        <a href="https://github.com/maxwelljones14/PairCustomization" target="_blank">[Code]</a>
+          </p>
+    </font>
+    <h3 style="text-align:center;">Pair Customization customizes a diffusion model to learn stylistic difference given <u>a single image pair</u>.</h3>
+</div>
+
+
+<div class="content">
+  <h2 style="text-align:center;">Abstract</h2>
+  <p>Art reinterpretation is the practice of creating a variation of a reference work, making a paired artwork that exhibits a distinct artistic style. 
+    We ask if such an image pair can be used to customize a generative model to capture the demonstrated stylistic difference.
+    We propose Pair Customization, a new customization method that learns stylistic difference from a <u>single</u> image pair and then applies the acquired style to the generation process.
+    Unlike existing methods that learn to mimic a single subject from a collection of images, our method captures the stylistic difference between paired images. This allows us to apply a stylistic change without overfitting to the specific image content in the examples. To address this new task, we employ a joint optimization method that explicitly separates the style and content into distinct LoRA weight spaces. We optimize these style and content weights to reproduce the content and style images while encouraging their orthogonality. During inference, we modify the diffusion process via a new style guidance based on our learned weights. 
+    Both qualitative and quantitative experiments show that our method can effectively learn style while avoiding overfitting to image content, highlighting the potential of modeling such stylistic differences from a single image pair. </p>
+</div>
+
+
+<div class="content">
+    <h2>Problem Statement</h2>
+    <p> Prior works on model customization/personalization take one or a few images of a single concept to customize large-scale text-to-image models. While they aim to learn styles without using pairs, the generated samples from these customized models often resemble the training images' content, such as specific objects, persons, and scene layouts.
+        These issues arise because the artistic intent is difficult to discern from a single image: unlike image pairs that can demonstrate a style through contrasts, a singleton example will always intertwine choices of both style and content. This ambiguity can cause the model to fail to capture the artistic style accurately and overfit to the example rather than the style, especially when generating images with the same/similar prompts as the training images. 
+        On the other hand, Pair Customization exploits the contrast between image pairs to better disentangling content and style.</p>
+    <br>
+    <img class="summary-img" src="./images/problem_statement.png" style="width:100%;"> <br>
+  </div>
+
+<div class="content">
+  <h2>Pair Customization Training/Inference</h2>
+  <br>
+  <img class="summary-img" src="./images/method.png" style="width:100%;"> <br>
+  <br>
+  <p>(Left) We disentangle content and style from an image pair by jointly training two  <a href="https://huggingface.co/blog/lora">low-rank adapters</a>, ContentLoRA and StyleLoRA representing content and style, respectively. We consider the following joint finetuning procedure: (Top Row) We fine-tune ContentLoRA to reconstruct content image conditioned on a content prompt. (Bottom Row) We reconstruct the style image using <i>both</i> ContentLoRA and StyleLoRA conditioned on a style prompt, but we only optimize StyleLoRA. (Right) At inference time, we only apply StyleLoRA to customize the model. Given the same noise seed, the customized model generates a stylized counterpart of the original pre-trained model output. V* is a fixed random rare token that is a prompt modifier for the content image. Style image credits: <a href="https://www.instagram.com/parkhouse_art/">Jack Parkhouse</a> </p>
+</div>
+
+
+<div id="results" class="content">
+  <h2>Results</h2>
+  <p>Our method faithfully generates images with stylization applied in many settings/contexts: </b>  </p>
+  <img class="summary-img" src="./images/examples.png" style="width:100%;">
+  <!-- <br>
+    <img class="summary-img" src="./images/results/for_web_result2.jpg" style="width:100%;">
+    <hr>
+  <p>Our method works well with style transfer from real reference images while not requiring training or model personalization.  </p>
+  <img class="summary-img" src="./images/results/reals2.jpg" style="width:100%;"> -->
+</div>
+
+<!-- <div id="results2" class="content">
+  <h2>Integration with Other Methods</h2>
+  <p>StyleAligned can be easily combined with other methods.</p>
+
+    <h4><a href="https://github.com/lllyasviel/ControlNet" target="_blank">ControlNet </a> + StyleAligned</h4>
+
+    <img class="summary-img" src="./images/results/controlnet1.jpg" style="width:100%;">
+    <br> <br>
+    <img class="summary-img" src="./images/results/controlnet2.jpg" style="width:100%;">
+    <br>
+    <hr>
+    <h4> <a href="https://dreambooth.github.io/" target="_blank">DreamBooth</a> + StyleAligned</h4>
+    <img class="summary-img" src="./images/results/db.jpg" style="width:100%;">
+    <br>
+    <hr>
+    <h4> <a href="https://multidiffusion.github.io/" target="_blank">MultiDiffusion</a> + StyleAligned</h4>
+    <img class="summary-img" src="./images/results/multidiffusion.jpg" style="width:100%;">
+</div> -->
+
+
+<div class="content">
+  <h2>BibTex</h2>
+    Coming Soon!
+  <!-- <code> @article{hertz2023StyleAligned,<br>
+  &nbsp;&nbsp;title={Style Aligned Image Generation via Shared Attention},<br>
+  &nbsp;&nbsp;author={Hertz, Amir and Voynov, Andrey and Fruchter, Shlomi and Cohen-Or, Daniel},<br>
+  &nbsp;&nbsp;booktitle={arXiv preprint arxiv:2312.02133},<br>
+  &nbsp;&nbsp;year={2023}<br>
+  } </code>  -->
+</div>
+
+
+<div class="content" id="acknowledgements">
+  <p><strong>Acknowledgements</strong>:
+    We thank Gaurav Parmar, Ruihan Gao, Sean Liu, and Or Patashnik for their insightful feedback and input that contributed to the finished work. The website template is taken from the <a href="https://style-aligned-gen.github.io/">Style Aligned</a> Project Page. 
+  </p>
+</div>
+</body>
+
+<br>
+<!-- <body font-family="Google Sans">
+    <h2 style="text-align:center;">Can you guess all of the places? Click on image to know the answer.</h2>
+    <p style="text-align:center;">All of the images are generated with StyleAligned, first image serves as the style source.</p>
+    <div id="grid-container" class="grid-container">
+        <!-- Grid items will be inserted here by script.js -->
+    <!-- </div>
+    <script src="quiz.js"></script>
+</body> --> -->
+
+</html>
