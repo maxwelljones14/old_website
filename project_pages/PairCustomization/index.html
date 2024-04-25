@@ -25,7 +25,8 @@
 	        <a href="https://github.com/maxwelljones14/PairCustomization" target="_blank">[Code]</a>
           </p>
     </font>
-    <h3 style="text-align:center;">Pair Customization customizes a diffusion model to learn stylistic difference given <u>a single image pair</u>.</h3>
+    <h3 style="text-align:center;">Pair Customization customizes a diffusion model to learn stylistic difference given <u>a single image pair</u>. <br>
+        Style image credits: <a href="https://www.instagram.com/parkhouse_art/">Jack Parkhouse</a></h3>
 </div>
 
 
@@ -58,15 +59,39 @@
 
 
 <div id="results" class="content">
-  <h2>Results</h2>
-  <p>Our method faithfully generates images with stylization applied in many settings/contexts: </b>  </p>
-  <img class="summary-img" src="./images/examples.png" style="width:100%;">
+  <h2>Results/Comparison with Baselines</h2>
+  <p>Our method faithfully generates images with stylization applied in many settings/contexts. We compare to the two strongest baselines we tested against, or Conpcepts Sliders <a href="#references">[1]</a> and DreamBooth LoRA <a href="#references">[2]</a>: </b>  </p>
+  <img class="summary-img" src="./images/main_results_v7.png" style="width:100%;">
   <!-- <br>
     <img class="summary-img" src="./images/results/for_web_result2.jpg" style="width:100%;">
     <hr>
   <p>Our method works well with style transfer from real reference images while not requiring training or model personalization.  </p>
   <img class="summary-img" src="./images/results/reals2.jpg" style="width:100%;"> -->
 </div>
+
+<div id="results" class="content">
+    <h2>Updated Style Application</h2>
+    <p>We introduce <b>Style Guidance</b>, a new formulation for smoothly applying a stylized model to generated outputs. We find that this method is superior to LoRA scale, or the 
+    practice of interpolating the strength of the output from finetuned LoRA layers. Refer to Section 3.3 of the paper for more details.</p>
+    <img class="summary-img" src="./images/style_ablation.png" style="width:100%;">
+    <!-- <br>
+      <img class="summary-img" src="./images/results/for_web_result2.jpg" style="width:100%;">
+      <hr>
+    <p>Our method works well with style transfer from real reference images while not requiring training or model personalization.  </p>
+    <img class="summary-img" src="./images/results/reals2.jpg" style="width:100%;"> -->
+  </div>
+
+<div id="results" class="content">
+    <h2>Multi-Slider Compositionality</h2>
+    <p>We can compose multiple customized models by directly blending each style guidance together. Adjusting blending strength
+        of each model allows us to acquire a smooth style transition</b>  </p>
+    <img class="summary-img" src="./images/blending_v2.png" style="width:100%;">
+    <!-- <br>
+      <img class="summary-img" src="./images/results/for_web_result2.jpg" style="width:100%;">
+      <hr>
+    <p>Our method works well with style transfer from real reference images while not requiring training or model personalization.  </p>
+    <img class="summary-img" src="./images/results/reals2.jpg" style="width:100%;"> -->
+  </div>
 
 <!-- <div id="results2" class="content">
   <h2>Integration with Other Methods</h2>
@@ -99,6 +124,20 @@
   } </code>  -->
 </div>
 
+<div class="content" id="references">
+    <h2>References</h2>
+      1. Gandikota, R., Materzynska, J., Zhou, T., Torralba, A., Bau, D.: Concept
+      sliders: Lora adaptors for precise control in diffusion models. arXiv preprint
+      arXiv:2311.12092 (2023) <br>
+      2. Ryu, S.: Low-rank adaptation for fast text-to-image diffusion fine-tuning. https:
+      //github.com/cloneofsimo/lora (2023)  
+    <!-- <code> @article{hertz2023StyleAligned,<br>
+    &nbsp;&nbsp;title={Style Aligned Image Generation via Shared Attention},<br>
+    &nbsp;&nbsp;author={Hertz, Amir and Voynov, Andrey and Fruchter, Shlomi and Cohen-Or, Daniel},<br>
+    &nbsp;&nbsp;booktitle={arXiv preprint arxiv:2312.02133},<br>
+    &nbsp;&nbsp;year={2023}<br>
+    } </code>  -->
+  </div>
 
 <div class="content" id="acknowledgements">
   <p><strong>Acknowledgements</strong>:
