@@ -6,6 +6,10 @@ body {
   font-weight: 300;
   background-color: #fff;
 }
+.video-wrapper {
+    max-width: 1280px; /* video width */
+    max-height: 720px; /* video height */
+}
 .content {
   width: 1000px;
   padding: 25px 50px;

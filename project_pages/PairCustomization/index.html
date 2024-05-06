@@ -11,18 +11,17 @@
 <div class="content">
   <h1><strong>Customizing Text-to-Image Models with a Single Image Pair</strong></h1>
   <!-- <h2 style="text-align:center;">ECCV 2024???</h2> -->
-  <p id="authors"><a href="https://maxwelljon.es/">Maxwell Jones<sup>1</sup></a> <a href="https://peterwang512.github.io/">Sheng-Yu Wang<sup>1</sup></a> <a href="https://nupurkmr9.github.io/">Nupur Kumari<sup>1</sup></a> <a href="https://baulab.info/">David Bau<sup>2</sup></a><a href="https://www.cs.cmu.edu/~junyanz/">Jun-Yan Zhu<sup>1</sup></a><br>
 
-    <span style="font-size: 16px"><br>
-        <sup>1</sup> Carnegie Mellon University <sup>2</sup> Northeastern University <br>
-     <!-- <sup>*</sup>Indicates Equal Contribution <sup>†</sup>Indicates Equal Advising</span> -->
-        </p>
-
-  <img src="./images/teaser.png" class="teaser-gif" style="width:100%;">
-    <font size="+2">
+<!--   <img src="./images/teaser.png" class="teaser-gif" style="width:100%;">	<font size="+2"> -->
+  <div class="video-wrapper">
+    <center>
+        <video id="teaser" autoplay muted loop playsinline  width="100%">
+            <source src="./images/PairCustomizationFixedBackground.mp4" type="video/mp4">
+    </center>
+  </div>
           <p style="text-align: center;">
-            <a href="" target="_blank">[Paper]</a> &nbsp;&nbsp;&nbsp;&nbsp;
-	        <a href="https://github.com/maxwelljones14/PairCustomization" target="_blank">[Code]</a>
+            <a href="https://arxiv.org/abs/2405.01536" target="_blank">[Paper]</a> &nbsp;&nbsp;&nbsp;&nbsp;
+	        <a href="https://github.com/PairCustomization/PairCustomization" target="_blank">[Code]</a>
           </p>
     </font>
     <h3 style="text-align:center;">Pair Customization customizes a diffusion model to learn stylistic difference given <u>a single image pair</u>. <br>
@@ -60,7 +59,7 @@
 
 <div id="results" class="content">
   <h2>Results/Comparison with Baselines</h2>
-  <p>Our method faithfully generates images with stylization applied in many settings/contexts. We compare to the two strongest baselines we tested against, or Conpcepts Sliders <a href="#references">[1]</a> and DreamBooth LoRA <a href="#references">[2]</a>: </b>  </p>
+  <p>Our method faithfully generates images with stylization applied in many settings/contexts. We compare to the two strongest baselines we tested against, or Conpcepts Sliders <a href="#references">[1]</a> and DreamBooth LoRA <a href="#references">[4, 5]</a>: </b>  </p>
   <img class="summary-img" src="./images/main_results_v7.png" style="width:100%;">
   <!-- <br>
     <img class="summary-img" src="./images/results/for_web_result2.jpg" style="width:100%;">
@@ -113,24 +112,37 @@
 </div> -->
 
 
-<div class="content">
+<!-- <div class="content">
   <h2>BibTex</h2>
-    Coming Soon!
-  <!-- <code> @article{hertz2023StyleAligned,<br>
-  &nbsp;&nbsp;title={Style Aligned Image Generation via Shared Attention},<br>
-  &nbsp;&nbsp;author={Hertz, Amir and Voynov, Andrey and Fruchter, Shlomi and Cohen-Or, Daniel},<br>
-  &nbsp;&nbsp;booktitle={arXiv preprint arxiv:2312.02133},<br>
-  &nbsp;&nbsp;year={2023}<br>
-  } </code>  -->
-</div>
+    <code>@article{jones2024customizing,
+  title={Customizing Text-to-Image Models with a Single Image Pair},
+  author={Jones, Maxwell and Wang, Sheng-Yu and Kumari, Nupur and Bau, David and Zhu, Jun-Yan},
+  journal={arXiv preprint arXiv:2405.01536},
+  year={2024}
+}
+}</code>
+</div> -->
 
 <div class="content" id="references">
     <h2>References</h2>
       1. Gandikota, R., Materzynska, J., Zhou, T., Torralba, A., Bau, D.: Concept
       sliders: Lora adaptors for precise control in diffusion models. arXiv preprint
       arXiv:2311.12092 (2023) <br>
-      2. Ryu, S.: Low-rank adaptation for fast text-to-image diffusion fine-tuning. https:
+      2. Kumari, N., Zhang, B., Zhang, R., Shechtman, E., Zhu, J.Y.: Multi-concept cus-
+      tomization of text-to-image diffusion. In: 2023 IEEE/CVF Conference on Com-
+      puter Vision and Pattern Recognition (CVPR). pp. 1931-1941. IEEE Computer
+      Society (2023)
+      3. Gal, R., Alaluf, Y., Atzmon, Y., Patashnik, O., Bermano, A.H., Chechik, G.,
+      Cohen-or, D.: An image is worth one word: Personalizing text-to-image generation
+      using textual inversion. In: The Eleventh International Conference on Learning
+      Representations (2022)
+      4. Ruiz, N., Li, Y., Jampani, V., Pritch, Y., Rubinstein, M., Aberman, K.: Dream-
+      booth: Fine tuning text-to-image diffusion models for subject-driven generation.
+      In: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+      Recognition. pp. 22500-22510 (2023)
+      5. Ryu, S.: Low-rank adaptation for fast text-to-image diffusion fine-tuning. https:
       //github.com/cloneofsimo/lora (2023)  
+
     <!-- <code> @article{hertz2023StyleAligned,<br>
     &nbsp;&nbsp;title={Style Aligned Image Generation via Shared Attention},<br>
     &nbsp;&nbsp;author={Hertz, Amir and Voynov, Andrey and Fruchter, Shlomi and Cohen-Or, Daniel},<br>
@@ -139,13 +151,12 @@
     } </code>  -->
   </div>
 
+</body>
 <div class="content" id="acknowledgements">
   <p><strong>Acknowledgements</strong>:
-    We thank Gaurav Parmar, Ruihan Gao, Sean Liu, and Or Patashnik for their insightful feedback and input that contributed to the finished work. The website template is taken from the <a href="https://style-aligned-gen.github.io/">Style Aligned</a> Project Page. 
+    The website template is taken from the <a href="https://style-aligned-gen.github.io/">Style Aligned</a> Project Page. 
   </p>
 </div>
-</body>
-
 <br>
 <!-- <body font-family="Google Sans">
     <h2 style="text-align:center;">Can you guess all of the places? Click on image to know the answer.</h2>
